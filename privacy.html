@@ -28,13 +28,13 @@
 <strong>Última atualização:</strong> 27 de setembro de 2026</p>
 
 <h2>1. Sobre este aplicativo</h2>
-<p>O <strong>Content Factory</strong> é uma ferramenta de automação interna desenvolvida para uso exclusivo do titular da conta. Ela automatiza a geração e publicação de vídeos curtos em plataformas de mídia social, incluindo o TikTok, utilizando a TikTok Content Posting API.</p>
-<p>Este aplicativo <strong>não é disponibilizado ao público em geral</strong> e não possui processo de cadastro ou login para terceiros.</p>
+<p>O <strong>Content Factory</strong> é uma ferramenta de automação de conteúdo desenvolvida e operada por Diogo Varela. Ela automatiza a geração e publicação de vídeos curtos em plataformas de mídia social, incluindo o TikTok, utilizando a TikTok Content Posting API.</p>
+<p>O aplicativo publica em contas do próprio operador e em contas de clientes que autorizaram expressamente essa publicação em seu nome. Cada titular de conta concede acesso através do login oficial da plataforma (TikTok Login Kit) e pode revogá-lo a qualquer momento nas configurações do TikTok.</p>
 
 <h2>2. Dados coletados</h2>
 <p>O aplicativo acessa, de forma limitada e exclusiva, os seguintes dados através da TikTok API:</p>
 <ul>
-  <li><strong>Token de acesso OAuth:</strong> utilizado exclusivamente para autenticar requisições de publicação de vídeo na conta do titular.</li>
+  <li><strong>Token de acesso OAuth:</strong> utilizado exclusivamente para autenticar requisições de publicação de vídeo na conta autorizada.</li>
   <li><strong>Metadados de publicação:</strong> título, descrição e hashtags dos vídeos gerados internamente pelo próprio sistema.</li>
 </ul>
 <p>O aplicativo <strong>não coleta</strong> dados de perfil, seguidores, comentários, mensagens, curtidas, histórico de visualizações ou qualquer outro dado pessoal do TikTok além do necessário para publicação.</p>
@@ -42,13 +42,13 @@
 <h2>3. Uso dos dados</h2>
 <p>Os dados acessados são utilizados <strong>exclusivamente</strong> para:</p>
 <ul>
-  <li>Autenticar e publicar vídeos na conta TikTok do titular do aplicativo.</li>
+  <li>Autenticar e publicar vídeos na conta TikTok autorizada (do operador ou de um cliente que tenha concedido acesso).</li>
   <li>Verificar o status da publicação após o envio.</li>
 </ul>
 <p>Os dados <strong>não são</strong> utilizados para análise de comportamento, marketing, publicidade, venda ou compartilhamento com terceiros.</p>
 
 <h2>4. Armazenamento e retenção</h2>
-<p>O token de acesso OAuth é armazenado de forma segura no servidor privado do titular (VPS), protegido por autenticação e acessível apenas ao proprietário. Nenhum dado do TikTok é armazenado em bancos de dados de terceiros ou serviços de nuvem pública.</p>
+<p>O token de acesso OAuth é armazenado de forma segura em servidor privado (VPS), protegido por autenticação e acessível apenas ao operador. Nenhum dado do TikTok é armazenado em bancos de dados de terceiros ou serviços de nuvem pública.</p>
 <p>Os tokens são renovados automaticamente e os tokens antigos são descartados imediatamente após a renovação.</p>
 
 <h2>5. Compartilhamento com terceiros</h2>
@@ -63,9 +63,9 @@
 </ul>
 
 <h2>7. Direitos do usuário (LGPD)</h2>
-<p>Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), o titular tem direito a:</p>
+<p>Em conformidade com a Lei Geral de Proteção de Dados (Lei nº 13.709/2018), cada titular de conta conectada tem direito a:</p>
 <ul>
-  <li>Revogar o acesso do aplicativo à conta TikTok a qualquer momento, diretamente nas configurações de privacidade do TikTok.</li>
+  <li>Revogar o acesso do aplicativo à sua conta TikTok a qualquer momento, diretamente nas configurações de privacidade do TikTok.</li>
   <li>Solicitar a exclusão de quaisquer dados retidos pelo sistema.</li>
 </ul>
 <p>Para revogar o acesso: <strong>TikTok → Configurações → Privacidade → Aplicativos Conectados</strong> → remover "Content Factory".</p>
@@ -87,13 +87,13 @@
 <strong>Last updated:</strong> September 27, 2026</p>
 
 <h2>1. About this application</h2>
-<p><strong>Content Factory</strong> is an internal automation tool developed for the exclusive use of the account holder. It automates the generation and publication of short-form videos on social media platforms, including TikTok, using the TikTok Content Posting API.</p>
-<p>This application is <strong>not available to the general public</strong> and has no sign-up or login process for third parties.</p>
+<p><strong>Content Factory</strong> is a content-automation tool developed and operated by Diogo Varela. It automates the generation and publication of short-form videos on social media platforms, including TikTok, using the TikTok Content Posting API.</p>
+<p>The application publishes to the operator's own accounts and to accounts of clients who have expressly authorized that publishing on their behalf. Each account holder grants access through the platform's official login (TikTok Login Kit) and may revoke it at any time in TikTok's settings.</p>
 
 <h2>2. Data accessed</h2>
 <p>The application accesses, in a limited and exclusive manner, the following data through the TikTok API:</p>
 <ul>
-  <li><strong>OAuth access token:</strong> used solely to authenticate video publishing requests on the account holder's behalf.</li>
+  <li><strong>OAuth access token:</strong> used solely to authenticate video publishing requests on the authorized account's behalf.</li>
   <li><strong>Publication metadata:</strong> title, description, and hashtags of videos generated internally by the system itself.</li>
 </ul>
 <p>The application does <strong>not</strong> collect profile data, followers, comments, messages, likes, viewing history, or any other personal TikTok data beyond what is necessary for publishing.</p>
@@ -101,13 +101,13 @@
 <h2>3. Use of data</h2>
 <p>Accessed data is used <strong>exclusively</strong> to:</p>
 <ul>
-  <li>Authenticate and publish videos to the account holder's TikTok account.</li>
+  <li>Authenticate and publish videos to the authorized TikTok account (the operator's own, or a client's account for which access was granted).</li>
   <li>Verify the publication status after submission.</li>
 </ul>
 <p>Data is <strong>not</strong> used for behavioral analysis, marketing, advertising, sale, or sharing with third parties.</p>
 
 <h2>4. Storage and retention</h2>
-<p>The OAuth access token is stored securely on the account holder's private server (VPS), protected by authentication and accessible only to the owner. No TikTok data is stored in third-party databases or public cloud services.</p>
+<p>The OAuth access token is stored securely on a private server (VPS), protected by authentication and accessible only to the operator. No TikTok data is stored in third-party databases or public cloud services.</p>
 <p>Tokens are automatically refreshed and old tokens are immediately discarded after renewal.</p>
 
 <h2>5. Third-party sharing</h2>
@@ -122,7 +122,7 @@
 </ul>
 
 <h2>7. User rights</h2>
-<p>The account holder may revoke the application's access to the TikTok account at any time, directly in TikTok's privacy settings: <strong>TikTok → Settings → Privacy → Connected Apps</strong> → remove "Content Factory".</p>
+<p>Each connected account's holder may revoke the application's access to their TikTok account at any time, directly in TikTok's privacy settings: <strong>TikTok → Settings → Privacy → Connected Apps</strong> → remove "Content Factory".</p>
 
 <h2>8. Cookies and tracking</h2>
 <p>This website and application do not use cookies, tracking pixels, analytics tools, or any user tracking mechanism.</p>
@@ -135,7 +135,7 @@
 <strong>Email:</strong> diogovarela.representacoes@gmail.com</p>
 
 <footer>
-  Content Factory &mdash; Internal Use Only &mdash;
+  Content Factory &mdash;
   <a href="terms.html">Terms of Service</a>
 </footer>
 
